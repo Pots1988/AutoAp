@@ -268,7 +268,7 @@ module.exports = function(grunt) {
   grunt.registerTask("production", [
     "clean",
     "csscomb",
-    "less",
+    "style",
     "cmq",
     "csso",
     "concat",

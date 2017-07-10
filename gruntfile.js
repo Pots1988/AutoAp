@@ -183,9 +183,9 @@ module.exports = function(grunt) {
       symbols: {
         files: [{
           expand: true,
-          src: ["build/img/symbols.svg"]
+          src: ["build/img/**/*.svg", "!build/img/svg/symbols.svg"]
         }]
-      }
+      },
     },
 
     // Синхронизация браузера

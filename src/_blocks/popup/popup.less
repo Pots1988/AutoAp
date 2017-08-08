@@ -1,0 +1,107 @@
+.popup {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100000;
+  padding: 45px 52px;
+  background: rgba(0,0,0,0.3);
+  &--success {
+    padding: 0;
+    text-align: center;
+  }
+  &--active {
+    display: block;
+  }
+}
+
+.popup__inner {
+  height: 100%;
+  background: #fff;
+  position: relative;
+  border: 1px solid #95989A;
+  .popup--success & {
+    border: 0;
+    padding: 170px 240px 0;
+  }
+}
+
+.popup__close {
+  padding: 0;
+  border: 0;
+  background: none;
+  position: absolute;
+  top: -23px;
+  right: -18px;
+  z-index: 100;
+  svg {
+    display: block;
+  }
+}
+
+.popup__content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+    max-width: none;
+  }
+}
+
+.popup__comment {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.31);
+  padding: 12px;
+  color: #fff;
+}
+
+.popup__comment-date {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.popup__comment-message {
+  font-size: 18px;
+  line-height: 23px;
+  p {
+    margin: 0;
+  }
+}
+
+.popup__success-message {
+  font-size: 26px;
+  line-height: 33px;
+  color: #232323;
+  margin-bottom: 45px;
+}
+
+.popup__car-mark,
+.popup__car-number {
+  text-transform: uppercase;
+}
+
+.popup__success-recommendation {
+  color: #A7A7A7;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 60px;
+}
+
+.popup__btn {
+  max-width: 300px;
+  font-size: 20px;
+}

@@ -1,0 +1,109 @@
+@settings-title-color: #9B9B9B;
+@settings-title-color-black: #232323;
+@settings-address-color: #95989A;
+
+
+.settings {
+  padding: @padding;
+  position: relative;
+  min-height: 100%;
+}
+
+.settings__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.settings__item {
+  margin-bottom: 41px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.settings__title {
+  margin: 0 0 2px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: @settings-title-color;
+  .padding;
+  &--black {
+    margin: 0 0 21px;
+    color: @settings-title-color-black;
+  }
+}
+
+.settings__item-link {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  .padding(@top:19px, @bottom: 16px);
+  .border-bottom;
+}
+
+.settings__address {
+  margin: 0 0 25px;
+  font-size: 20px;
+  line-height: 26px;
+  font-style: normal;
+  color: @settings-address-color;
+  .padding;
+}
+
+.settings__address-name,
+.settings__address-street {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 5px;
+}
+
+.settings__adress-city {
+  display: block;
+  margin: 0 0 5px;
+}
+
+.settings__manager-list {
+  width: 100%;
+}
+
+.settings__manager-item {
+  .border-bottom;
+  height: 68px;
+}
+
+.settings__manager-name {
+  font-size: 24px;
+  line-height: 32px;
+  white-space: nowrap;
+  .padding;
+}
+
+.settings__manager-email {
+  padding: 0 12px;
+  font-size: 20px;
+  line-height: 26px;
+  width: 100%;
+}
+
+.settings__manager-delete {
+  .padding;
+}
+
+.settings__manager-btn {
+  border: 0;
+  background: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.setting__btn-delete {
+  position: absolute;
+  bottom: 60px;
+  right: 85px;
+}

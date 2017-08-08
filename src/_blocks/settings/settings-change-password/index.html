@@ -1,0 +1,23 @@
+<section class="settings">
+  <form action="/echo" class="form" method="POST">
+    <label class="form__label">
+      <span class="form__label-name">Старый пароль</span>
+      <input type="password" class="form__input" name="old-password" value="1234567" required>
+    </label>
+    <label class="form__label">
+      <span class="form__label-name">Новый пароль</span>
+      <input type="password" class="form__input" name="new-password" value="123456789" required>
+    </label>
+    <label class="form__label">
+      <span class="form__label-name">Повторите пароль еще раз</span>
+      <input type="password" class="form__input" name="new-password-double" value="123456789" required>
+    </label>
+    <label class="form__label form__label--padding" tabindex="0">
+      <input type="checkbox" class="form__checkbox" name="show-hide-password" id="show-hide-password">
+      <span class="form__checkbox-box"></span>
+      <span class="form__checkbox-text form__checkbox-text--show">Показать пароль</span>
+      <span class="form__checkbox-text form__checkbox-text--hide">Спрятать пароль</span>
+    </label>
+    <button type="submit" class="btn btn--fixed">Сохранить пароль</button>
+  </form>
+</section>

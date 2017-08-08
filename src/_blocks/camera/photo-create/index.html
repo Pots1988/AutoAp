@@ -1,0 +1,53 @@
+<section class="camera">
+  <a href="/pages/car/car-camera.html" class="camera__btn camera__btn--back">
+    Назад
+    <svg xmlns="http://www.w3.org/2000/svg" widht="25" height="24" viewBox="-12820 -5613 16 16">
+      <path style="fill:#9B9B9B" d="M7.8,11l5.6-5.6L12,4,4,12l8,8,1.4-1.4L7.8,13H20V11Z" transform="translate(-12824 -5617)"/>
+    </svg>
+  </a>
+  <div class="camera__settings camera__settings--right">
+    <button class="camera__btn camera__btn--comment">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3654 -4193 55 51" width="55" height="51">
+        <g transform="translate(-4592 -4839)">
+          <path fill="#9b9b9b" d="M37.8,2H4.2A4.193,4.193,0,0,0,0,6.071V28.464a4.193,4.193,0,0,0,4.2,4.071H24.191l6.792,7.242A.71.71,0,0,0,31.5,40a.728.728,0,0,0,.253-.045.68.68,0,0,0,.447-.633V32.536h5.6A4.193,4.193,0,0,0,42,28.464V6.071A4.193,4.193,0,0,0,37.8,2Zm2.8,26.464a2.8,2.8,0,0,1-2.8,2.714H31.5a.69.69,0,0,0-.7.679v5.709l-5.77-6.153-3.5-3.943a.717.717,0,0,0-.988-.072.665.665,0,0,0-.074.957l2.505,2.824H4.2a2.8,2.8,0,0,1-2.8-2.714V6.071A2.8,2.8,0,0,1,4.2,3.357H37.8a2.8,2.8,0,0,1,2.8,2.714Z" transform="translate(938 657)"/>
+          <g transform="translate(179 477)">
+            <g fill="#0084a6" stroke="#f5f5f5" transform="translate(786 169)">
+              <circle stroke="none" cx="14" cy="14" r="14"/>
+              <circle fill="none" cx="14" cy="14" r="13.5"/>
+            </g>
+            <text fill="#fff" font-size="18px" transform="translate(794 189)"><tspan x="0" y="0">+</tspan></text>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <div class="camera__zoom-block">
+      <span class="camera__zoom-name">Zoom</span>
+      <button class="camera__zoom-btn camera__zoom-btn--plus">Plus</button>
+      <button class="camera__zoom-btn camera__zoom-btn--minus">Minus</button>
+    </div>
+    <button class="camera__btn camera__btn--ok">
+      <svg width="80" height="80">
+        <use xlink:href="#icon-ok" />
+      </svg>
+    </button>
+  </div>
+  <div class="camera__photo-done">
+    <img src="/img/camera/car1.jpg" alt="">
+  </div>
+  <div class="comment">
+    <div class="comment__inner">
+      <form action="/echo" metho="GET" class="comment__form">
+        <label class="comment__form-distance">
+          <span>Добавьте пробег автомобиля:</span>
+          <input type="text" class="comment__form-input" name="distancess" placeholder="16000" required>
+          км
+        </label>
+        <label class="comment__form-label">
+          <span>Добавить комментарий</span>
+          <textarea name="comment" class="comment__form-textarea" required></textarea>
+        </label>
+        <button type="submit" class="comment__form-btn btn">Добавить</button>
+      </form>
+    </div>
+  </div>
+</section>

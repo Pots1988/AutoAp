@@ -17,6 +17,12 @@ module.exports = function(grunt) {
         dest: "build/",
         expand: true,
         cwd: "src/"
+      },
+      html_pages: {
+        src: "**/*.html",
+        dest: "build/pages/",
+        expand: true,
+        cwd: "src/pages/"
       }
     },
 
@@ -247,7 +253,7 @@ module.exports = function(grunt) {
       },
       html: {
         files: ["src/**/*.html"],
-        tasks: ["includereplace:html"],
+        tasks: ["includereplace"],
         options: {
           spawn: false,
           livereload: true

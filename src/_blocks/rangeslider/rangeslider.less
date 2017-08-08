@@ -1,0 +1,50 @@
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+}
+
+.rangeslider {
+  background: #95989A;
+  position: relative;
+}
+
+.rangeslider--vertical {
+  width: 1px;
+  height: 260px;
+  margin: 0 auto 5px;
+}
+
+.rangeslider__fill {
+  background: #95989A;
+  position: absolute;
+}
+
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+.rangeslider__handle {
+  border: 1px solid #95989A;
+  background: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  color: #95989A;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-left: -16px;
+  outline: none;
+  &::after {
+    content: "%";
+  }
+}
+
+
+.rangeslider--vertical .rangeslider__handle {
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}

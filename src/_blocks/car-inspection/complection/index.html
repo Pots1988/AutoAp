@@ -1,0 +1,63 @@
+<section class="car-inspection">
+  <h2 class="car-inspection__title">Комплектность</h2>
+  <div class="car-inspection__count">
+    <span class="car-inspection__current">10</span>
+    /
+    <span class="car-inspection__total">14</span>
+  </div>
+  <div class="car-inspection__complect-descr">
+    <p>
+      Выберите комплекты, которые есть в автомобиле
+    </p>
+  </div>
+  <form action="/echo" class="car-inspection__form" method="POST">
+    <div class="car-inspection__complection">
+      <div class="car-inspection__left">
+        <label class="car-inspection__label">
+          <input type="checkbox" name="all" class="car-inspection__input">
+          <span>Выбрать все</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="wheel" class="car-inspection__input">
+          <span>Запасное колесо</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="fire" class="car-inspection__input">
+          <span>Огнетушитель</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="jack" class="car-inspection__input">
+          <span>Домкрат</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="first-aid" class="car-inspection__input">
+          <span>Аптечка</span>
+        </label>
+      </div>
+      <div class="car-inspection__right">
+        <label class="car-inspection__label">
+          <input type="checkbox" name="towing" class="car-inspection__input">
+          <span>Буксировочное крепление</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="warning" class="car-inspection__input">
+          <span>Знак аварийной остановки</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="radio" class="car-inspection__input">
+          <span>Магнитола</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="battery" class="car-inspection__input">
+          <span>Аккумулятор</span>
+        </label>
+        <label class="car-inspection__label">
+          <input type="checkbox" name="spool" class="car-inspection__input">
+          <span>Балонный ключ</span>
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn--fixed" disabled>Сохранить и продолжить</button>
+  </form>
+</section>
+

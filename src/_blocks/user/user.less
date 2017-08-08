@@ -1,0 +1,134 @@
+@user-bg-blue: #00596f;
+@user-col-white: #fff;
+@user-bg-white: #fff;
+
+@user-border-grey: #95989a;
+
+@user-col-dark: #232323;
+@user-col-blue: #0084a6;
+@user-col-grey: #95989a;
+
+.user {
+  padding: 37px 84px 10px 38px;
+  &--main {
+    text-align: center;
+    padding: 48px 24px 10px;
+    background: url(/img/user/bg.png) 0 18px, linear-gradient(to bottom, @user-bg-blue 282px, @user-bg-white 282px);
+  }
+}
+
+.user__info {
+  position: relative;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  color: @user-col-white;
+}
+
+.user__full-name {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 3px;
+}
+
+.user__role {
+  //
+}
+
+.user__email {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+.user__address {
+  color: @user-col-white;
+  text-align: center;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 28px;
+}
+
+.user__adress-city {
+  display: block;
+}
+
+.user__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid @user-border-grey;
+  margin: 0 auto 23px;
+  background: #ccc;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.user__exit {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: @user-col-dark;
+  font-size: 22px;
+  line-height: 24px;
+  svg {
+    margin-right: 26px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.user__exit-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+// User profile
+.user__profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+//User profile info
+.user__profile-info {
+  text-align: center;
+  width: 300px;
+  padding: 0 20px;
+}
+
+.user__photo-choose {
+  font-size: 20px;
+  line-height: 24px;
+  color: @user-col-blue;
+  margin-bottom: 63px;
+  input {
+    display: none;
+  }
+}
+
+.user__profile-email {
+  color: @user-col-grey;
+  line-height: 24px;
+}
+
+.user__profile-email-name {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.user__profile-email-adress {
+  display: block;
+  font-size: 18px;
+}
+
+// User profile data
+.user__profile-data {
+  width: 590px;
+}

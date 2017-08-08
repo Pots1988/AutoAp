@@ -1,0 +1,72 @@
+<section class="authorization">
+  <div class="authorization__list authorization__list--password">
+    <div class="authorization__item authorization__item--big" id="authorization__enter">
+      <div class="authorization__logo">
+        <svg width="151" height="117">
+          <use xlink:href="#icon-car" />
+        </svg>
+      </div>
+      <h1 class="authorization__title authorization__title--big">Бортовой журнал</h1>
+      <div class="authorization__descr authorization__descr--big">
+        <p>Краткая характеристика приложения или слоган</p>
+      </div>
+      <form action="/echo" class="form form--short" method="POST" id="authorization">
+        <label class="form__label form__label--authorization">
+          <svg width="31" height="22">
+            <use xlink:href="#icon-mail" />
+          </svg>
+          <input type="email" class="form__input form__input--authorization" name="email" placeholder="E-mail" required>
+        </label>
+        <label class="form__label form__label--password form__label--authorization">
+          <svg width="26" height="32">
+            <use xlink:href="#icon-password" />
+          </svg>
+          <input type="password" class="form__input form__input--authorization" name="password" placeholder="Пароль" required>
+        </label>
+        <div class="form__field form__field--right">
+          <a href="#authorization__email" class="form__forget-link">Забыли пароль?</a>
+        </div>
+        <button type="submit" class="btn btn--enter">Войти</button>
+      </form>
+    </div>
+    <div class="authorization__item" id="authorization__email">
+      <h2 class="authorization__title">Введите свой e-mail</h2>
+      <div class="authorization__descr">
+        <p>Мы отправим Вам сообщение с новым паролем</p>
+      </div>
+      <form action="/echo" class="form form--only form--short" method="POST" id="authorization-email">
+        <label class="form__label form__label--authorization form__label--only">
+          <svg width="31" height="22">
+            <use xlink:href="#icon-mail" />
+          </svg>
+          <input type="email" class="form__input form__input--authorization" name="email" placeholder="E-mail" required>
+        </label>
+        <button type="submit" class="btn btn--password">Получить пароль</button>
+      </form>
+      <p class="authorization__info">
+        Вспомнили старый пароль?
+        <a href="#authorization__enter" class="authorization__info--link">Войти</a>
+      </p>
+    </div>
+    <div class="authorization__item" id="authorization__password">
+      <h2 class="authorization__title">Введите новый пароль</h2>
+      <div class="authorization__descr">
+        <p>Мы отправили Вам сообщение с новым паролем на e-mail <span id="authorization__email-send" class="authorization__email-send">petya@gmail.com</span></p>
+        <p>Проверьте его, пожалуйста.</p>
+      </div>
+      <form action="/echo" class="form form--only form--short" method="POST" id="authorization-password">
+        <label class="form__label form__label--password form__label--authorization">
+          <svg width="26" height="32">
+            <use xlink:href="#icon-password" />
+          </svg>
+          <input type="password" class="form__input form__input--authorization" name="password" placeholder="Пароль" required>
+        </label>
+        <button type="submit" class="btn btn--enter">Войти</button>
+      </form>
+      <p class="authorization__info">
+        Указали неправильный e-mail?
+        <a href="#authorization__email" class="authorization__info--link">Введите адрес еще раз</a>
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,84 @@
+@authorization-title: #3d3d3d;
+@authorization-descr: #9b9b9b;
+@authorization-link: #0084a6;
+@authorization-email-link: #3d3d3d;
+
+.authorization {
+  background: #fff url(/img/authorization/bg-part.jpg) 197px -164px;
+  height: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.authorization__list {
+  width: 300%;
+  display: flex;
+  height: 100%;
+  transition: .5s;
+  &--email {
+    margin-left: -100%;
+  }
+  &--password {
+    margin-left: -200%;
+  }
+}
+
+.authorization__item  {
+  width: 33.333333%;
+  flex-grow: 1;
+  padding: 174px 0 40px;
+  &--big {
+    padding: 56px 0 40px;
+  }
+}
+
+.authorization__logo {
+  margin: 0 0 13px;
+}
+
+.authorization__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  margin: 0 0 24px;
+  color: @authorization-title;
+  &--big {
+    margin: 0 0 26px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.authorization__descr {
+  color: @authorization-descr;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0 0 54px;
+  min-height: 52px;
+  &--big {
+    font-size: 22px;
+    line-height: 29px;
+    min-height: 58px;
+    margin: 0 0 28px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.authorization__info {
+  margin: 0;
+  color: @authorization-descr;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.authorization__info--link {
+  color: @authorization-link;
+  text-decoration: none;
+}
+
+.authorization__email-send {
+  font-weight: 700;
+  color: @authorization-email-link;
+}

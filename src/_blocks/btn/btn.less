@@ -1,3 +1,67 @@
-.btn {
+@btn-bg-blue: #00beee;
+@btn-bg-blue-dark: #0084a6;
+@btn-bg-white: #ffffff;
+@btn-bg-grey: #d4d4d4;
+@btn-col-white: #ffffff;
+@btn-col-grey: #d4d4d4;
+@btn-border: #eaeaea;
+@btn-shadow: 0 3px 16px rgba(0,0,0,0.16);
 
+.btn {
+  border: 0;
+  background: @btn-bg-blue-dark;
+  padding: 14px 10px;
+  font-size: 24px;
+  line-height: 32px;
+  color: @btn-col-white;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  transition: .3s;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  &:active {
+    background: @btn-bg-blue;
+  }
+  &:disabled,
+  &:active:disabled {
+    background: @btn-bg-grey;
+    color: @btn-col-white;
+  }
+  &--enter {
+    margin-top: 83px;
+    max-width: 260px;
+  }
+  &--password {
+    max-width: 280px;
+  }
+  &--round {
+    font-size: 0;
+    line-height: 22px;
+    width: 84px;
+    height: 84px;
+    padding: 30px 0;
+    border: 1px solid @btn-border;
+    box-shadow: @btn-shadow;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+    right:  85px;
+  }
+  &--save {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 17px 10px;
+    &:disabled,
+    &:active:disabled {
+      background: @btn-bg-grey;
+    }
+  }
+  &--fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
 }

@@ -1,0 +1,16 @@
+<section class="car-inspection">
+  <div class="car-inspection__driver">
+    <h2 class="car-inspection__title">Перед началом осмотра укажите водителя!</h2>
+    <div class="car-inspection__descr">
+      <p>Поле для заполнения обязательно</p>
+    </div>
+    <form action="/echo" class="form form--inspection" method="POST">
+      <input id="driver-name-all" type="hidden" value="Василий Васильев,Василий Васечкин,Василий Васнецов">
+      <label class="form__label form__label--flex">
+        <span class="form__label-name">Водитель:</span>
+        <input class="form__input" id="driver" type="text" name="driver" required>
+      </label>
+      <button type="submit" class="btn btn--fixed" disabled>Сохранить и продолжить</button>
+    </form>
+  </div>
+</section>

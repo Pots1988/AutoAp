@@ -95,10 +95,13 @@
   border-left: 0;
   padding: 5px 13px;
   margin: 0 -6px;
+  overflow: hidden;
+}
+
+.car__parts-list-inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  margin-right: -30px;
 }
 
 .car__parts-img {
@@ -106,9 +109,6 @@
   height: 110px;
   border: 1px solid #95989A;
   margin: 15px 30px 15px 0;
-  &:nth-child(7n) {
-    margin-right: 0;
-  }
 }
 
 .car__btn {
